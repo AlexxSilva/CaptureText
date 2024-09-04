@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CaptureText.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Button
+                x:Name="CounterBtn"
+                Text="Pick Image" 
+                SemanticProperties.Hint="Picks an image for OCR"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill" />
+
+            <Button
+                    x:Name="PictureBtn"
+                    Text="take me" 
+                    SemanticProperties.Hint="Take a picture for OCR"
+                    Clicked="PictureBtn_Clicked"
+                    HorizontalOptions="Fill" /> 
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
